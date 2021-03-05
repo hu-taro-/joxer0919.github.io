@@ -1,0 +1,145 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Raleway','M PLUS 1p', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  font-weight: 300;
+}
+
+html,body{
+  height:100%;
+}
+
+body{
+  background-color: #fff;
+  color:#444;
+}
+
+.l-constrained{
+  width: 880px;
+  margin: 0 auto;
+}
+
+.clearfix:after{
+  content:""; /* 中身を空っぽにさせる。 */
+  display:block; /* ブロック化させる。 */
+  clear:both; /*回り込みを解除する。*/
+}
+
+.pull-left{
+  float:left; /*指定した要素を左に寄せる。*/
+  box-sizing: border-box;  /*パディングとボーダーを幅と高さに合わせる。*/
+}
+
+.pull-right{
+  float:right;
+  box-sizing: border-box;
+}
+
+.l-constrained-large {
+  width:980px;
+  margin: 0 auto;
+}
+
+.separator-white{
+  height: 1px;
+  width:30px;
+  margin: 60px auto;
+  background-color: #fff;
+}
+
+/* .l-wrapper{
+  min-height: 100%;
+} */
+
+.l-header{
+  position:fixed;
+  top 0;
+  left:0;
+  right:0;
+  background-image: url(../img/header.png);
+  background-size: cover;
+  background-position: center;
+  box-sizing:border-box;
+  padding:0px 0px;
+  height: 80px;
+  display:none;
+}
+
+.h-logo > .title{
+  color:#fff;
+  font-size: 26px;
+  line-height:80px;
+}
+
+ul.menu{
+  display:table;
+  margin: 0 auto;
+  margin-top:46px;
+}  /* ul（メニュー）を横並びに等間隔で並べる。 */
+
+ul.menu > li{
+  display:table-cell;
+  padding:0px 8px;
+}
+
+ul.menu > li a{
+  font-family: 'Raleway',sans-serif;
+  font-weight:300;
+  color:#fff;
+  text-decoration:none;
+  font-size:30px;
+  padding:16px 32px;
+  transition: background-color 0.3s;
+}
+
+ul.menu > li > a:hover{
+  background-color: rgba(123,41,77,0.15);
+  box-shadow:0px 0px 3px rgba(100,100,100,0.2) inset;
+  border-radius:3px;
+}/*マウスカーソルを合わせた場合を定義する*/
+
+ul.h-menu{
+  list-style: none;
+}
+
+ul.h-menu > li a{
+  color: #fff;
+  text-decoration: none;
+  height: 80px;
+  line-height: 80px;
+  display: block;
+  font-size:20px;
+  padding:0px 24px;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+ul.h-menu > li > a:haver{
+  background-color:rgba(123,41,77,0.15);
+  box-shadow:0px 0px 3px rgba(100,100,100,0.2) inset;
+}
+
+.l-marketing{
+  background-image:url(../img/header.png);
+  background-size: cover;
+  background-position:center ;
+  box-sizing:border-box;
+  padding: 190px 0px;
+}
+
+.l-marketing h1{
+  font-family: 'Raleway',sans-serif;
+  font-weight:300;
+  color:#fff;
+  font-size: 80px;
+  text-align:center;
+}
+
+.l-marketing p{
+  font-family: 'Raleway',sans-serif;
+  font-weight:300;
+  color:#fff;
+  font-size:80px;
+  text-align:center;
+}
