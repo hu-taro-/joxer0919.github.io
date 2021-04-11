@@ -57,7 +57,7 @@ body{
   top 0;
   left:0;
   right:0;
-  background-image: url(../img/header.png);
+  background-image: url(../img/header.jpg);
   background-size: cover;
   background-position: center;
   box-sizing:border-box;
@@ -121,7 +121,7 @@ ul.h-menu > li > a:haver{
 }
 
 .l-marketing{
-  background-image:url(../img/header.png);
+  background-image:url(../img/header.jpg);
   background-size: cover;
   background-position:center ;
   box-sizing:border-box;
@@ -142,4 +142,152 @@ ul.h-menu > li > a:haver{
   color:#fff;
   font-size:80px;
   text-align:center;
+}
+
+.section{
+  margin-top:40px;
+}
+
+.section-title{
+  text-align:center;
+  font-size 50px;
+}
+
+.section-contet h1{
+  font-size:36px;
+  padding:8px 0px 24px 0px;
+}
+
+.subsection{
+  margin-bottom:32
+}
+
+.section-title:after{
+  content:"";
+  display:block;
+  width:30px;
+  height:1px;
+  background-color:#ccc;
+  margin:30px auto;
+}
+
+img.icon-large{
+  width:230px;
+  border-radius: 50%;
+}
+
+.profile-icon{
+  width:28%;
+}
+
+.profile-content{
+  width:72%;
+  padding: 0px 8px;
+  line-height:180%
+}
+
+.section-product{
+  background-color: #eee;
+  padding:34px 0px;
+}
+
+.section-contact{
+  padding:34px 0px 80px 0px;
+  color:#fff;
+  background-color: #232323;
+}
+
+.section-contact .section-content{ 
+  text-align:center;
+}
+
+input.text-email{
+  background-color: #666;
+  border:solid #101010 1px;
+  border-radius: 3px;
+  width:550px;
+  color: #fff;
+  font-size:40px;
+  text-align: center;
+  padding: 16px 0px;
+  outline:none;
+}
+
+ul.tech{
+  list-style:none;
+}
+
+ul.tech > li{
+  padding-right:24px;
+  padding-bottom:16px;
+}
+
+ul.tech li img{
+  height: 60px;
+}
+
+ul.social {
+  list-style:none;
+  display:table;
+  margin:0 auto;
+}
+
+ul.social > li{
+  display:table-cell;
+  padding:0px 16px;
+}
+
+ul.social > li > a{
+  color:#999;
+  text-decoration:none;
+  font-size:40px;
+  transition: color 0.3s;
+}
+
+ul.social > li > a:hover{
+  color:#fff;
+}
+
+ul.social > li > a.facebook:hover{
+  color:#3C599F;
+}
+
+ul.social > li > a.twitter:hover{
+  color:#55ACEE;
+}
+
+ul.horizontal-list{
+  list-style:none;
+}
+
+ul.products >li{
+  width:20%;
+  padding:8px;  
+}
+
+ul.products > li > a{
+  display:block;
+  height:160px;
+  width:100%;
+  background-size:cover;
+  border-radius:3px;
+  box-shadow:0px 0px 3px rgba(0,0,0,0.2);
+}
+
+.section-product{
+  display:none;
+}
+
+.product-info > li{
+  list-style:none;
+  padding:16px 8px;
+  border-bottom:solid #ccc 1px;
+}
+
+.product-info > li .field{
+  width:20%;
+}
+
+.product-info > li .descrition{
+  width:80%
 }
