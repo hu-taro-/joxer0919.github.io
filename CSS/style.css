@@ -48,22 +48,24 @@ body{
   background-color: #fff;
 }
 
-/* .l-wrapper{
-  min-height: 100%;
-} */
+.l-wrapper{ 
+  min-height: 100%; 
+  /* heightプロパティの使用値が下回ることを防ぐ。 */
+}
 
-.l-header{
-  position:fixed;
-  top 0;
+/*ダミーで置かれている。*/
+.l-header{  
+  position:fixed; /*要素を絶対値表現する。*/
+  top:0;
   left:0;
   right:0;
   background-image: url(../img/header.jpg);
-  background-size: cover;
-  background-position: center;
-  box-sizing:border-box;
-  padding:0px 0px;
-  height: 80px;
-  display:none;
+  background-size: cover; /*画像を可能な限り、大きく表現する。*/
+  background-position: center; /*相対位置において、中央に置く*/
+  box-sizing:border-box;  /*内側に狭める*/
+  padding:0px 0px;   /* 要素外枠の空間をなくす。 */
+  height: 80px;   /*要素に対して、上に80px開ける*/
+  display:none;   /* このクラスタグを非表示とする。 */
 }
 
 .h-logo > .title{
@@ -121,11 +123,11 @@ ul.h-menu > li > a:haver{
 }
 
 .l-marketing{
-  background-image:url(../img/header.jpg);
-  background-size: cover;
-  background-position:center ;
-  box-sizing:border-box;
-  padding: 190px 0px;
+  background-image:url(../img/header.jpg);  /*壁紙を表示する。*/
+  background-size: cover;   /*なるべく大きく表示する。*/
+  background-position:center ; /*中央寄せ*/
+  box-sizing:border-box;  /*内側に寄せるとのこと。ぶっちゃけあまり変わらない*/
+  padding: 190px 0px;  /*上下190px、左右0とする。*/
 }
 
 .l-marketing h1{
@@ -145,26 +147,27 @@ ul.h-menu > li > a:haver{
 }
 
 .section{
-  margin-top:40px;
+  margin-top:40px;  /* 上向きに40pxマージンを設ける。 */
 }
 
 .section-title{
-  text-align:center;
-  font-size 50px;
+  text-align:center;  /*文字列を真ん中に寄せる。*/
+  font-size: 50px;  /*フォントのサイズが誤っていたために、文字が小さく見えた*/
 }
 
 .section-contet h1{
-  font-size:36px;
+  font-size: 56px;  /*フォントサイズ*/
+  font-weight: bolder; /*太字にする。*/
   padding:8px 0px 24px 0px;
 }
 
 .subsection{
-  margin-bottom:32
+  margin-bottom:32px; /*下向きに余白を開ける*/
 }
 
 .section-title:after{
-  content:"";
-  display:block;
+  content:"";   /*中身を空っぽとする*/
+  display:block;  /*ブロックボックスを生成する*/
   width:30px;
   height:1px;
   background-color:#ccc;
